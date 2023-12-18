@@ -8,7 +8,7 @@
 import Foundation
 import Combine
 
-final class TransactionListViewModel: ObservableObject {
+final class TransactionListViewModel: ObservableObject, Observable {
     @Published var transactions: [Transaction] = []
     
     private var cancellables = Set<AnyCancellable>()
@@ -42,7 +42,6 @@ final class TransactionListViewModel: ObservableObject {
                 }
             } receiveValue: { [weak self] result in
                 self?.transactions = result
-                dump(self?.transactions)
             }
             .store(in: &cancellables)
 
