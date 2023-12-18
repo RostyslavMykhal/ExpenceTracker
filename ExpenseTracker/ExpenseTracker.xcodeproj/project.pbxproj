@@ -12,6 +12,7 @@
 		79746A6C2B30AB2F0015F38D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79746A6B2B30AB2F0015F38D /* Assets.xcassets */; };
 		79746A6F2B30AB2F0015F38D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79746A6E2B30AB2F0015F38D /* Preview Assets.xcassets */; };
 		79746A762B30B2B30015F38D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79746A752B30B2B30015F38D /* Extensions.swift */; };
+		79746A782B30C4DC0015F38D /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79746A772B30C4DC0015F38D /* TransactionModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,6 +22,7 @@
 		79746A6B2B30AB2F0015F38D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		79746A6E2B30AB2F0015F38D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		79746A752B30B2B30015F38D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		79746A772B30C4DC0015F38D /* TransactionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,6 +57,7 @@
 			children = (
 				79746A672B30AB2E0015F38D /* ExpenseTrackerApp.swift */,
 				79746A692B30AB2E0015F38D /* ContentView.swift */,
+				79746A772B30C4DC0015F38D /* TransactionModel.swift */,
 				79746A752B30B2B30015F38D /* Extensions.swift */,
 				79746A6B2B30AB2F0015F38D /* Assets.xcassets */,
 				79746A6D2B30AB2F0015F38D /* Preview Content */,
@@ -140,6 +143,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79746A782B30C4DC0015F38D /* TransactionModel.swift in Sources */,
 				79746A6A2B30AB2E0015F38D /* ContentView.swift in Sources */,
 				79746A682B30AB2E0015F38D /* ExpenseTrackerApp.swift in Sources */,
 				79746A762B30B2B30015F38D /* Extensions.swift in Sources */,
