@@ -13,6 +13,10 @@
 		79746A6F2B30AB2F0015F38D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 79746A6E2B30AB2F0015F38D /* Preview Assets.xcassets */; };
 		79746A762B30B2B30015F38D /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79746A752B30B2B30015F38D /* Extensions.swift */; };
 		79746A782B30C4DC0015F38D /* TransactionModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79746A772B30C4DC0015F38D /* TransactionModel.swift */; };
+		79746A7A2B30C77E0015F38D /* PreviewData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79746A792B30C77E0015F38D /* PreviewData.swift */; };
+		79746A7C2B30CC8F0015F38D /* TransactionRow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79746A7B2B30CC8F0015F38D /* TransactionRow.swift */; };
+		79746A7F2B30D3200015F38D /* SwiftUIFontIcon in Frameworks */ = {isa = PBXBuildFile; productRef = 79746A7E2B30D3200015F38D /* SwiftUIFontIcon */; };
+		79746A812B30E2F00015F38D /* TransactionListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 79746A802B30E2F00015F38D /* TransactionListViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -23,6 +27,9 @@
 		79746A6E2B30AB2F0015F38D /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		79746A752B30B2B30015F38D /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		79746A772B30C4DC0015F38D /* TransactionModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionModel.swift; sourceTree = "<group>"; };
+		79746A792B30C77E0015F38D /* PreviewData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PreviewData.swift; sourceTree = "<group>"; };
+		79746A7B2B30CC8F0015F38D /* TransactionRow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionRow.swift; sourceTree = "<group>"; };
+		79746A802B30E2F00015F38D /* TransactionListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionListViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -30,6 +37,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79746A7F2B30D3200015F38D /* SwiftUIFontIcon in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -58,7 +66,9 @@
 				79746A672B30AB2E0015F38D /* ExpenseTrackerApp.swift */,
 				79746A692B30AB2E0015F38D /* ContentView.swift */,
 				79746A772B30C4DC0015F38D /* TransactionModel.swift */,
+				79746A802B30E2F00015F38D /* TransactionListViewModel.swift */,
 				79746A752B30B2B30015F38D /* Extensions.swift */,
+				79746A7B2B30CC8F0015F38D /* TransactionRow.swift */,
 				79746A6B2B30AB2F0015F38D /* Assets.xcassets */,
 				79746A6D2B30AB2F0015F38D /* Preview Content */,
 			);
@@ -69,6 +79,7 @@
 			isa = PBXGroup;
 			children = (
 				79746A6E2B30AB2F0015F38D /* Preview Assets.xcassets */,
+				79746A792B30C77E0015F38D /* PreviewData.swift */,
 			);
 			path = "Preview Content";
 			sourceTree = "<group>";
@@ -89,6 +100,9 @@
 			dependencies = (
 			);
 			name = ExpenseTracker;
+			packageProductDependencies = (
+				79746A7E2B30D3200015F38D /* SwiftUIFontIcon */,
+			);
 			productName = ExpenseTracker;
 			productReference = 79746A642B30AB2E0015F38D /* ExpenseTracker.app */;
 			productType = "com.apple.product-type.application";
@@ -117,6 +131,9 @@
 				Base,
 			);
 			mainGroup = 79746A5B2B30AB2E0015F38D;
+			packageReferences = (
+				79746A7D2B30D3200015F38D /* XCRemoteSwiftPackageReference "SwiftUIFontIcon" */,
+			);
 			productRefGroup = 79746A652B30AB2E0015F38D /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -143,9 +160,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				79746A7A2B30C77E0015F38D /* PreviewData.swift in Sources */,
 				79746A782B30C4DC0015F38D /* TransactionModel.swift in Sources */,
 				79746A6A2B30AB2E0015F38D /* ContentView.swift in Sources */,
+				79746A7C2B30CC8F0015F38D /* TransactionRow.swift in Sources */,
 				79746A682B30AB2E0015F38D /* ExpenseTrackerApp.swift in Sources */,
+				79746A812B30E2F00015F38D /* TransactionListViewModel.swift in Sources */,
 				79746A762B30B2B30015F38D /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -352,6 +372,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		79746A7D2B30D3200015F38D /* XCRemoteSwiftPackageReference "SwiftUIFontIcon" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/huybuidac/SwiftUIFontIcon";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		79746A7E2B30D3200015F38D /* SwiftUIFontIcon */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 79746A7D2B30D3200015F38D /* XCRemoteSwiftPackageReference "SwiftUIFontIcon" */;
+			productName = SwiftUIFontIcon;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 79746A5C2B30AB2E0015F38D /* Project object */;
 }
