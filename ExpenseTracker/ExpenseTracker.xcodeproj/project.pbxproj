@@ -22,6 +22,7 @@
 		79746A882B3102130015F38D /* Collections in Frameworks */ = {isa = PBXBuildFile; productRef = 79746A872B3102130015F38D /* Collections */; };
 		79746A8A2B3102130015F38D /* DequeModule in Frameworks */ = {isa = PBXBuildFile; productRef = 79746A892B3102130015F38D /* DequeModule */; };
 		79746A8C2B3102130015F38D /* OrderedCollections in Frameworks */ = {isa = PBXBuildFile; productRef = 79746A8B2B3102130015F38D /* OrderedCollections */; };
+		79746A8F2B3103D00015F38D /* SwiftUICharts in Frameworks */ = {isa = PBXBuildFile; productRef = 79746A8E2B3103D00015F38D /* SwiftUICharts */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,6 +49,7 @@
 				79746A7F2B30D3200015F38D /* SwiftUIFontIcon in Frameworks */,
 				79746A8C2B3102130015F38D /* OrderedCollections in Frameworks */,
 				79746A8A2B3102130015F38D /* DequeModule in Frameworks */,
+				79746A8F2B3103D00015F38D /* SwiftUICharts in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -117,6 +119,7 @@
 				79746A872B3102130015F38D /* Collections */,
 				79746A892B3102130015F38D /* DequeModule */,
 				79746A8B2B3102130015F38D /* OrderedCollections */,
+				79746A8E2B3103D00015F38D /* SwiftUICharts */,
 			);
 			productName = ExpenseTracker;
 			productReference = 79746A642B30AB2E0015F38D /* ExpenseTracker.app */;
@@ -149,6 +152,7 @@
 			packageReferences = (
 				79746A7D2B30D3200015F38D /* XCRemoteSwiftPackageReference "SwiftUIFontIcon" */,
 				79746A862B3102130015F38D /* XCRemoteSwiftPackageReference "swift-collections" */,
+				79746A8D2B3103D00015F38D /* XCRemoteSwiftPackageReference "ChartView" */,
 			);
 			productRefGroup = 79746A652B30AB2E0015F38D /* Products */;
 			projectDirPath = "";
@@ -408,6 +412,14 @@
 				minimumVersion = 1.0.5;
 			};
 		};
+		79746A8D2B3103D00015F38D /* XCRemoteSwiftPackageReference "ChartView" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/AppPear/ChartView";
+			requirement = {
+				kind = exactVersion;
+				version = "2.0.0-beta.2";
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -430,6 +442,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = 79746A862B3102130015F38D /* XCRemoteSwiftPackageReference "swift-collections" */;
 			productName = OrderedCollections;
+		};
+		79746A8E2B3103D00015F38D /* SwiftUICharts */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 79746A8D2B3103D00015F38D /* XCRemoteSwiftPackageReference "ChartView" */;
+			productName = SwiftUICharts;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
