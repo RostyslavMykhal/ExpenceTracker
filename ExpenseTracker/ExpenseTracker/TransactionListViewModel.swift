@@ -49,6 +49,7 @@ final class TransactionListViewModel: ObservableObject, Observable {
                 self?.transactions = result
             }
             .store(in: &cancellables)
+        
 
     }
     
